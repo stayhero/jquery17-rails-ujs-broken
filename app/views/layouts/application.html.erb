@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BrokenUjs</title>
+  <%= stylesheet_link_tag    "application" %>
+
+  <%=  yield :jquery_libs %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h1>jQuery 1.7 vs. 1.6.4 - Trigger ajax:complete</h1>
+<p>
+  This is a simple Rails app to show that jQuery 1.7 does not
+  trigger 'ajax:complete' event when the form which was submitted
+  got replaced via Ajax/Serverside Javascript by another form.
+</p>
+
+<%= yield %>
+
+<p>
+  <a href="/jquery17">Show jQuery 1.7 Version</a> |
+  <a href="/jquery164">Show jQuery 1.6.4 Version</a>
+</p>
+
+
+</body>
+</html>

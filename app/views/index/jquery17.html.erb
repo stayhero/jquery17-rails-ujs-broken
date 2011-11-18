@@ -1,0 +1,9 @@
+<% content_for :jquery_libs do %>
+  <%= javascript_include_tag 'jquery17','jquery_ujs.direct', 'application' %>
+<%end%>
+
+<h3>jQuery 1.7 in use</h3>
+
+<div id="test_form_container">
+  <%=  render :partial => 'form' %>
+</div>

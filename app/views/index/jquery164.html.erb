@@ -1,0 +1,9 @@
+<% content_for :jquery_libs do %>
+  <%= javascript_include_tag 'jquery164','jquery_ujs.direct', 'application' %>
+<%end%>
+
+<h3>jQuery 1.6.4 in use</h3>
+
+<div id="test_form_container">
+  <%=  render :partial => 'form' %>
+</div>
